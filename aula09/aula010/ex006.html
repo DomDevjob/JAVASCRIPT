@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            text-shadow: black 1px 1px 10px;
+            cursor: pointer;
+            font: normal 20pt arial;
+            background-color: gray;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 7px;
+            box-shadow: inset 0px 3px 30px 10px rgba(0, 0, 0, 0.638);
+        }
+    </style>
+</head>
+<body>
+    <!-- exemplo que polui html
+        <div id="area"  onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+        Interaja....
+    </div>-->
+
+    <div id="area" > 
+        Interaja....
+    </div>
+
+    <script>
+         var a = window.document.getElementById('area')
+         // exemplo mais simples
+         a.addEventListener('click' , clicar)
+         a.addEventListener('mouseenter' , entrar)
+         a.addEventListener('mouseout' , sair)
+
+        function clicar() {
+            a.innerText = 'CLICOU!'
+            a.style.background = 'red'
+            a.style.transition = '0.5s ease'
+        }
+        function entrar() {
+            a.innerText = 'ENTROU!'
+            a.style.background = 'gold'
+            a.style.transition = '0.5s ease'
+        }
+        function  sair(){
+            a.innerText = 'SAIU!'
+            a.style.background = 'green'
+            a.style.transition = '0.5s ease'
+        }
+    </script>
+</body>
+</html>

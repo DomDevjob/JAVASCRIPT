@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Primeiro Programa...</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html{
+            height: 100%;
+        }
+        body {
+            background-color: rgb(153, 153, 202);
+            color: white; /*Comentário em CSS*/
+            font:normal 20pt arial;
+            height: 100%;
+        }
+        h1 {
+            color: rgb(185, 185, 92);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!</h1><!--Isso é um comentário-->
+    <p>Já me livrei da Maldição!!!</p>
+    <script>
+        // numero para um numero inteiro = Number.parseInt(n)
+        // numero para um numero fracionado = Number.parseFloat(n)
+
+                //    parseInt(n) + parseFloat(n) + number(n)
+
+        // var n1 = window.prompt('Digite um número: ')// string
+        var n1 = Number(window.prompt('Digite um numero'))//numero convertido
+        
+        // var n2 = window.prompt('Digite outro número')// string
+        var n2 = Number(window.prompt('Digite outro número'))// numero convertido
+        var s = n1 + n2
+        ///window.alert('A soma dos valores é ' + String(s)) // concatenar
+        // template string
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        // (number + number) para adição
+        // (string + string) para concatenação
+
+                // de numero para string
+                // string(n) + n.tostring()
+
+                // formatação strings
+            //s.lenght = quantas letras
+            //s.toUpperCase() = para letra maiuscula
+            //s.toLowerCase() = para letras minusculas
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+var c = 1
+while (c >2 || c <= 20) {
+    console.log(`Como ${c} pasteis`)
+    // c = 1 + 1
+   c++   
+ }
+
+
+
+/*
+console.log("e ai??")
+console.log("e ai??")
+console.log("e ai??")
+console.log("e ai??")
+console.log("e ai??")
+console.log("e ai??")
+console.log("e ai??")
+*/

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>teste - Quantas letras tem seu Nome?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+        <meta name="description" content="praticaWeb - usando as tecnologias"/>
+        <meta property="og:title" content="praticaWeb - descrição">
+        <meta property="og:site_name" content="nome do site">
+        <meta property="og:description" content="nome do site - descrição Completa">
+        <meta property="og:url" content="https://urldomeusite.com.br">
+        <meta property="og:image" content="https://urldaimagemdomeusite.com.br/og-img.jpg">
+        <meta property="og:image:type" content="image/jpeg">
+    </head>
+<body>
+    <header>
+        <div>
+            <h2><img src="imagens/question.png" alt="question" width="100px"></h2>
+        </div>
+        <nav>
+            <ul >
+                <li><a href="Home">Home</a></li>
+                <li><a href="contato">contato</a></li>
+                <li><a href="sobre">sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="fundo">
+            <h1 class="titulo">Quantas letras <em>TEM SEU NOME </em>??? &#x1F914 </h1>
+            <p name="paragrafo">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae sint ad. Quod, sit id placeat aliquid est laboriosam optio assumenda nesciunt omnis aspernatur quaerat dolor voluptates cum quae facilis! Lorem ipsum dolor sit amet lectus fugiat facilis id modi? Impedit id illo odit numquam totam perferendis. Vel ut esse nesciunt fugiat?
+            </p>
+            
+            <p name2="paragrafo2">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere, ullam iusto tempora culpa temporibus, est eum quam impedit repellendus quasi magnam at? Asperiores voluptates aspernatur vero distinctio ullam eligendi!
+            </p>
+        
+            <p name2="paragrafo3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere, ullam iusto tempora culpa temporibus, est eum quam impedit repellendus quasi magnam at? Asperiores voluptates aspernatur vero distinctio ullam eligendi!
+            </p>
+        </div>
+    </section>
+
+    <script>
+        // exercicio 1 alertas
+       /*
+        window.alert("ola") mensagem
+        window.confirm("td bem?") pergunta
+        window.prompt("Qual o seu nome?") interação
+      */
+
+        // exercicio 2 printar nome na tela
+       
+        /*var nome2 = window.prompt("Qual o seu nome?")
+        window.alert("Ola, Querido(a) " + nome2 + " seja muito bem vindo")
+        */
+
+        //* Template String ${Nome da variavel}
+        /*var nome2 = window.prompt("Olá ...")
+        window.alert(`Ola, Querido(a) ${nome2} Seja muito bem vindo(a)`)
+        */
+
+        /*
+        var n1 = Number(window.prompt("digite uma numeração")) 
+        var n2 = Number(window.prompt("digite outra numeração"))
+        var s = n1 + n2
+        //window.alert('A soma entre a  numeração é '+ String(s))
+        window.alert(`A soma entre a  numeração ${n1} e ${n2} é igual a ${s}`)
+        */
+
+        //exercicio 3 interação com o nome da pessoa
+        var nome = window.prompt('Qual é o seu nome?')
+        document.write(`<h1>Olá <strong>${nome}</strong>,seu nome tem ${nome.length} letras!!!</h1>`)
+        document.write(`<h1>Seu nome em maiúsculo é ${nome.toUpperCase()}</h1>`)
+        document.write(`<h1>Seu nome em minúsculo é ${nome.toLowerCase()}</h1>`)
+    </script>
+
+    <footer>
+        <div>
+            <h3>
+                Todos os direitos reservados &#169
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>

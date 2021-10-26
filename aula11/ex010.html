@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            height: 100%;
+            font-size: 1.2em;
+        }
+
+        h1 {
+            color: blue;
+            margin: 10px;
+            text-align: center;
+        }
+
+        input {
+            background-color: rgba(128, 128, 128, 0.735);
+            color: white;
+            margin: auto;
+            border-style: none;
+            transition: 0.2s ease;
+        }
+
+        input[type=number] {
+            padding: 10px;
+            font-size: 1.2em;
+            transition: 0.2s ease;
+        }
+
+        input[type=button] {
+            color: white;
+            background-color: rgb(4, 45, 4);
+            padding: 30px;
+            text-align: center;
+            margin: 10px 70px;
+            display: inline-block;
+            border-style: none;
+            transition: 0.4s ease;
+            box-shadow: 1px 1px 10px gray;
+            cursor: pointer;
+        }
+
+        input[type=button]:hover {
+            background-color: white;
+            color: green;
+            transition: 0.4s ease;
+            font-size: 1em;
+            border-radius: 50% 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> Km/h
+    <br>
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"></div>
+    
+        <script>
+            function calcular() {
+                var txtv = window.document.querySelector('input#txtvel')
+                var res = window.document.querySelector('div#res')
+                var vel = Number(txtv.value)
+                res.innerHTML = `<p>Sua Velocidade atual é de <strong>${vel}Km/h</strong></p>`
+                if (vel > 60 ){
+                    res.innerHTML += `<p>Você está <strong>multado</strong> por excesso de velocidade</p>`
+                }
+                res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+            }
+        </script>
+    
+</body>
+</html>

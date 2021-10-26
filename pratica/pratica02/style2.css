@@ -1,0 +1,455 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    color: white;
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+
+.imagemdefundo {
+    background-image: url('images/Apresentação\ Verde\ e\ Branca\ de\ Conferência\ Agro.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85vh;
+}
+
+.imagemdefundo .logo {
+    border: px solid red;
+    padding: 1em 0.2em;
+    width: 200px;
+}
+
+.headerwraper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+
+nav ul li  {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.2em;
+    border: px solid black;
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+/*
+#21593B #3DA66E #4D735F #6FA689 #5AF2A1 white #ffffff black
+orange
+*/
+nav ul li a {
+    text-decoration: none;
+    color: hsl(148, 86%, 92%);
+    font-size: 0.8em;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    width: 70%;
+    border: px solid black;
+    padding-top: 40px;
+    margin: 0 auto;
+ }
+
+ .texto h1 {
+     color: white;
+     font-family: 'mulishi', Arial, Helvetica, sans-serif;
+     font-size: 3.5em;
+ }
+
+ .texto p {
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding-top: 1em;
+ }
+
+/*////////////*/
+main {
+    width: 100%;
+}
+
+ .assuntos {
+    border-left: 60px #21593B solid;
+    border-top: 60px #21593B solid; 
+    height: 95vh;
+ }
+
+ .div_assuntos {
+     background-color: white;
+     padding: 4em 2.9em;
+ }
+   
+.div_assuntos h2 {
+    color: black;
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+    font-size: 3em;
+}
+
+.div_assuntos p {
+    font-size: 1em;
+    color: #4D735F;
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    margin-top: 1em;
+}
+
+.div_assuntos2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(45, 66, 55);
+    list-style-position: inside;
+    font-family: 'mulishi', Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: left;
+    border-left: 1px solid rgb(45, 66, 55);
+    width: 400px;
+    margin: 0 auto;
+}
+
+.div_assuntos2 ul {
+    padding-left: 1.2em;
+}
+
+/*//////////////////////*/
+
+.semear {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: white; 
+    padding-top: 1em;
+}
+
+.semearbloco2 {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+    padding-left: 5em;  
+}
+
+.semearbloco2 h2 {
+    color: black;
+    font-size: 3em;
+    height: 340px;
+}
+
+span {
+    color: #48b97d;
+}
+
+.citacao {
+    border-right: 1px solid rgb(45, 66, 55);
+    text-align: right;
+    padding-right: 1em;
+    font-size: 0.9em;
+    margin-bottom: 2em;
+    margin-top: 4em;
+}
+
+small {
+    color: rgba(0, 0, 0, 0.692);
+}
+/*///////////////////////////////*/
+
+.agronegocio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.agronegociotitulo {
+    background-color: #21593B;
+    width: 650px;
+    height: 400px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.agronegociotitulo  h2 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.agronegociotitulo p {
+    font-size: 1.3em;
+    font-weight: normal;
+    text-align: left;
+}
+
+
+.agronegociodescricao {
+    background-color: white;
+    width: 650px;
+    color: black;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.agronegociodescricao p {
+    color: rgba(0, 0, 0, 0.795);
+    font-size: 1em;
+    align-items: left;
+    padding-right:1em;
+    padding-left: 0.6em;
+}
+/************************************/
+
+.polos {
+    margin: 3em;
+    padding-top: 20px;
+    color: black;
+}
+
+.polostexto {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.estados {
+    margin: 2em auto;
+    max-width: 1300px;
+    height: auto;
+}
+
+.blocos_estados {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.blocos_descricao {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.blocos_descricao p:nth-child(1) {
+    color: #21593B;
+    border-left: 1px solid #4D735F;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
+.blocos_descricao p:nth-child(2) {
+    color: #21593B;
+    border-left: 1px solid #4D735F;
+    padding: 10px 12px;
+    font-weight: lighter;
+    font-size: 0.86em;
+}
+/**************************************/
+.crescimento {
+    height: 6em;
+    margin: 20px auto;
+}
+
+.crescimento_background {
+    background-image: url('images/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top top;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.crescimento_background2 {
+    background-image: url('images/forest2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.crescimento_background p,.crescimento_background2 p {
+    text-align: center;
+    padding-left: 10px;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.crescimento_grafico {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+.graficoexemplo {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 500px;
+    margin-top: 50px;
+    border-left: 1px solid white;
+}
+
+.graficoexemplo2 {
+    width: 20%;
+    height: 300px;
+    background-color: #21593B;
+    border-bottom: 1px solid white;
+    margin: 0px 5px 0px 5px;
+    border-radius: 6px 6px 0px 0px; 
+    display: flex; 
+    flex-direction: column-reverse;
+    box-shadow: 1px -1px 10px 2px #ccc;
+}
+
+.graficoexemplo2:nth-of-type(1) {
+    background-image: linear-gradient( white 50%, #21593B 50% );
+}
+
+.graficoexemplo2:nth-of-type(2) {
+    background-image: linear-gradient( white 40%, #21593B 20% );
+}
+
+.graficoexemplo2:nth-of-type(3) {
+    background-image: linear-gradient( white 30%, #21593B 10% );
+}
+
+.graficoexemplo2:nth-of-type(4) {
+    background-image: linear-gradient( white 26%, #21593B 5% );
+}
+
+.graficoexemplo2:nth-of-type(5) {
+    background-image: linear-gradient( white 5%, #21593B 5% );
+}
+
+.graficoexemplo2:hover {
+   cursor: pointer;
+}
+
+.graficotitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+.graficotitulo_texto {
+    font-size: 1.3em;
+    color: black;
+}
+
+.graficotitulo_descricao {
+    font-size: 0.9em;
+    color: #153826;
+    border-left:1px solid #21593B;
+    padding: 10px 20px;
+}
+/************************/
+.evolucao_valor {
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+    margin: 60px auto ;
+}
+
+.evolucao_valor_agro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px auto;
+    margin-bottom: 10px;
+}
+
+
+.evolucao_valor_agro h2 {
+    color: black;
+    font-size: 2.3em;
+    
+}
+
+.evolucao_valor_agro p {
+    color: #153826;
+    border-left: 1px solid #21593B ;
+    padding-left: 10px;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+.evolucao_valor_grafico {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+/*************************************************/
+.inovacao {
+    border: px solid red;
+    background-color: #153826;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.inovacaoagricultura {
+    text-align: center;
+}
+
+.inovacaoagricultura h2 {
+    font-size: 2.8em;
+    word-spacing: 15px;
+   
+}
+
+.inovacaoagricultura > span {
+    color: white;
+}

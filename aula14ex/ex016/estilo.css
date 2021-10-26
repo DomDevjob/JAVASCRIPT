@@ -1,0 +1,50 @@
+@charset "pt-BR";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background-color: rgb(70, 142, 236);
+    font:normal 15pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: 20px auto;
+    box-shadow: rgba(0, 0, 0, 0.407) 1px 5px 10px;
+}
+
+input[type=button] {
+    color: whitesmoke;
+    padding: 13px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.6s ease;
+    background-color: rgba(172, 172, 172, 0.42);
+}
+
+input[type=button]:hover {
+    color: white;
+    transition: 0.4s ease;
+    background-color: rgb(239, 97, 46);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+footer {
+    margin: 10px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

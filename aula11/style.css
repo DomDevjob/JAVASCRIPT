@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+h1 {
+    margin: 10px auto;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: bold;
+    color: rgb(154, 154, 203);
+}
+
+.container {
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(44, 44, 125);
+    padding: 20px;
+    box-shadow: 0px -5px 4px white inset;
+    background-image: url('countries-2335432_640.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+}
+
+.container p:first-child {
+    color: white;
+   text-transform: capitalize;
+    margin-bottom: 10px;
+    text-shadow: black 1px 3px 4px;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    color: rgb(10, 10, 91);
+    margin-bottom: 10px;
+}
+
+input {
+    border: none;
+    padding: 1em;
+    border: 1px solid rgb(120, 27, 27);
+    box-shadow: 2px 4px 15px rgba(1, 4, 4, 0.612);
+    cursor: pointer;
+    border-radius: 5px 5px 0px 0px;
+    transition: 0.3s ease;
+}
+
+input:hover {
+    color: white;
+    font-size: 1.3em;
+    transition: 0.3s ease;
+    background-color: rgb(122, 230, 242);
+    box-shadow: 1px 1px 16px rgba(239, 249, 249, 0.352);
+}
+
+input:checked{
+    border-style: none;
+}
+
+input[type=text] {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    background-color: white;
+    border: none;
+}
+
+p:last-child {
+    color: Green;
+    font-size: 2em;
+    font-family: fantasy, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
